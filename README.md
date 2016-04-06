@@ -26,7 +26,7 @@ A patched version of the richfaces-impl dependency, which should work better wit
 4. I replaced the embedded Sarissa version in AJAX.js with a recent 0.9.9.7-SNAPSHOT build (timestamp 2016-04-01T14:57:21Z), which can be downloaded from https://gist.github.com/volkertb/bd39dad1e7eeb17730e4
 5. I replaced the minified embedded Sarissa version in framework.pack.js with the minified version of the same 0.9.9.7-SNAPSHOT build (timestamp 2016-04-01T14:57:21Z), which can also be downloaded from https://gist.github.com/volkertb/bd39dad1e7eeb17730e4
 6. I replaced the version string "3.3.4.Final" in pom.xml under META-INF (as well as in other metadata files in the JAR) with the version string "3.3.4.Final\_IEFixes". (In other words: I appended the suffix "\_IEFixes" to the version/release number.)
-7. I modified the POM.xml furter so that it would no longer depend on any external parent POM.
+7. I modified the POM.xml further so that it would no longer depend on any external parent POM.
 8. I re-zipped the JAR file after making the above changes and appended the suffix \_IEFixes to the version number in the name of the new JAR file.
 9. I deployed the patched JAR file into a local Artifactory server, with both the checkboxes "Deploy as Maven Artifact" and "Deploy Jar's Internal POM/Generate Default POM" checked.
 10. I published all the resulting files in this Gihub repository.
